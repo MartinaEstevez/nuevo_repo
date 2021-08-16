@@ -14,5 +14,13 @@
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
   },
-  "description": ""
+  "description": "Este proyecto esta hecho por Martina Estevez para el curso de Desarrollo Web en Coderhouse.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinaEstevez/nuevo_repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MartinaEstevez/nuevo_repo/issues"
+  },
+  "homepage": "https://github.com/MartinaEstevez/nuevo_repo#readme"
 }
