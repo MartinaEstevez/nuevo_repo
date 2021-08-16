@@ -25,15 +25,32 @@ hr{
 
 
 /* comienza clases en todas las paginas */ 
-.footer{
-    width: $tamañocompleto;
-    &__item{
-        background-image: linear-gradient(to bottom, $colorCremaFondoTexto,  $celesteFondoByLyR);
-        margin: $marginsypaddings;
-        max-width: $tamañocompleto;
-        height: $tamañocompleto;}
-    &__item-hr{
-        max-width: $tamañocompleto;}}
+.containerI2{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    max-width: 1528px;
+    margin-top: 10%;
+    background-color: #033247;
+    &__row{
+        text-align: center;
+        list-style-type: none;
+        width: 100%;
+        background-color: #033247;}
+    &__col{
+        padding: 20px;}
+    &__col-m{
+        padding: 20px;
+        padding-right:20px; 
+        border-right: 1px solid #ccc;}
+    &__a{
+        margin-bottom: 0px;
+        background-color: #033247;
+        text-decoration: none;
+        font-size: 15px;
+        font-family:Arial, Helvetica, sans-serif;
+        color: aliceblue;}}
+  
 .header{
     &__img{
        padding: 0px;
