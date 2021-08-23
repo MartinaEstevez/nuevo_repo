@@ -11,7 +11,7 @@
   font-family: 'Nanum Gothic', sans-serif; }
 
 .colorDeFondoC {
-  background-color: #033247;
+  background-color: white;
   font-family: 'Nanum Gothic', sans-serif; }
 
 /* termina clases de fondos y font-family */
@@ -223,21 +223,18 @@ hr {
 /* termina clases en "Reseñas" */
 /* comienza clases en "Contacto" */
 .containerC {
-  max-width: 300px; }
+  max-width: 300px;
+  color: dimgrey; }
   .containerC__h1 {
     text-align: center;
-    color: white;
     margin-top: 20px;
     margin-bottom: 20px; }
   .containerC__form {
     font-size: 15px;
-    color: whitesmoke;
     margin-top: 20px;
     margin-bottom: 100px;
     animation: bounceInUp;
     animation-duration: 2s;
     text-align: center; }
-  .containerC__item-gris {
-    color: dimgrey; }
 
 /* termina clases en "Contacto" */
