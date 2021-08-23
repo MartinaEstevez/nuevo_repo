@@ -31,25 +31,25 @@ hr{
     width: 100%;
     max-width: 1528px;
     margin-top: 10%;
-    background-color: #033247;
+    background-color: $azulOscuroFondo;
     &__row{
         text-align: center;
         list-style-type: none;
         width: 100%;
-        background-color: #033247;}
+        ;}
     &__col{
         padding: 20px;}
     &__col-m{
         padding: 20px;
         padding-right:20px; 
-        border-right: 1px solid #ccc;}
+        border-right: 1px solid $colorHr;}
     &__a{
         margin-bottom: 0px;
-        background-color: #033247;
+        ;
         text-decoration: none;
         font-size: 15px;
         font-family: 'Nanum Gothic', sans-serif;;
-        color: aliceblue;}}
+        color: $colorHr;}}
   
 .header{
     &__img{
@@ -58,9 +58,9 @@ hr{
        height: $tamañocompleto;
        width: $tamañocompleto;}}
 .nav{
-    background-color: $colorCremaFondoTexto;
+    background-color: $azulOscuroFondo;
     &__link{
-        color:$colorVerdeUsual;
+        color: $colorHr;
         font-size: 25px;}}
 /* termina clases en todas las paginas */ 
 
