@@ -4,15 +4,15 @@
 /* comienza clases de fondos y font-family */
 .colorDeFondo {
   background-color: darkcyan;
-  font-family: 'Roboto Slab', serif; }
+  font-family: 'Nanum Gothic', sans-serif; }
 
 .colorDeFondoD {
   background-color: #75bbc0;
-  font-family: 'Roboto Slab', serif; }
+  font-family: 'Nanum Gothic', sans-serif; }
 
 .colorDeFondoC {
   background-color: #033247;
-  font-family: 'Roboto Slab', serif; }
+  font-family: 'Nanum Gothic', sans-serif; }
 
 /* termina clases de fondos y font-family */
 /* comienza css de p y hr */
