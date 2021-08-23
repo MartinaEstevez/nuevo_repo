@@ -3,11 +3,11 @@
 /* tamaños mas usados */
 /* comienza clases de fondos y font-family */
 .colorDeFondo {
-  background-color: darkcyan;
+  background-color: white;
   font-family: 'Nanum Gothic', sans-serif; }
 
 .colorDeFondoD {
-  background-color: #75bbc0;
+  background-color: white;
   font-family: 'Nanum Gothic', sans-serif; }
 
 .colorDeFondoC {
@@ -17,8 +17,7 @@
 /* termina clases de fondos y font-family */
 /* comienza css de p y hr */
 p {
-  background-color: honeydew;
-  color: darkcyan;
+  color: #1c252e;
   text-align: justify;
   text-indent: 25px; }
 
@@ -91,14 +90,12 @@ hr {
     justify-items: center;
     margin: auto; }
   .containerI__item {
-    background-color: honeydew;
     padding-top: 30px;
     padding-bottom: 30px; }
   .containerI__h1 {
-    background-color: antiquewhite;
     font-size: 40px;
     text-align: center;
-    color: darkcyan;
+    color: #1c252e;
     animation: bounce;
     animation-duration: 2s; }
   .containerI__img {
@@ -106,10 +103,7 @@ hr {
     max-width: 500px;
     height: 400px; }
   .containerI__col-pFondo {
-    margin: 10px;
-    color: #1c252e;
-    background-blend-mode: overlay;
-    opacity: 70%; }
+    margin: 10px; }
   .containerI__p {
     background-color: white;
     color: #1c252e;
@@ -125,7 +119,6 @@ hr {
     max-width: 200px;
     margin: auto; }
   .containerB__item {
-    background-color: honeydew;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -134,8 +127,7 @@ hr {
     animation-duration: 2s; }
   .containerB__h2 {
     text-align: center;
-    color: honeydew;
-    background-color: darkcyan; }
+    color: #1c252e; }
 
 @keyframes appear {
   0% {
@@ -191,8 +183,7 @@ hr {
     padding: 0px; }
   .containerL__h1, .containerB__h1, .containerR__h1 {
     text-align: center;
-    color: honeydew;
-    background-color: darkcyan;
+    color: #1c252e;
     margin-top: 20px;
     margin-bottom: 20px; }
   .containerL__img {
@@ -205,13 +196,12 @@ hr {
   .containerL__img:hover {
     transform: skewY(5deg); }
   .containerL__item {
-    background-color: honeydew;
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center; }
   .containerL__titulo {
-    color: darkcyan;
+    color: #1c252e;
     font-size: 20px;
     font-weight: bold;
     text-align: center; }

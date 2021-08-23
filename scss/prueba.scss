@@ -4,22 +4,21 @@
 
 /* comienza clases de fondos y font-family */
 .colorDeFondo{
-    @include colorFondo ($colorVerdeUsual)}
+    @include colorFondo ($colorBlanco)}
 .colorDeFondoD{
-    @include colorFondo ($celesteFondoByLyR)}
+    @include colorFondo ($colorBlanco)}
 .colorDeFondoC{
-    @include colorFondo ($fondoBlancoContacto)}
+    @include colorFondo ($colorBlanco)}
 /* termina clases de fondos y font-family */
-      
+
 
 /* comienza css de p y hr */
 p{
-    background-color: $colorCremaFondoTexto;
-    color: $colorVerdeUsual;
+    color: $textoIndex;
     text-align: justify;
     text-indent: 25px;}
 hr{
-    color: $colorHr;
+    color: $colorBlanco;
     margin: $marginsypaddings;}    
 /* termina css de p y hr */ 
 
@@ -42,14 +41,14 @@ hr{
     &__col-m{
         padding: 20px;
         padding-right:20px; 
-        border-right: 1px solid $colorHr;}
+        border-right: 1px solid $colorBlanco;}
     &__a{
         margin-bottom: 0px;
         ;
         text-decoration: none;
         font-size: 15px;
         font-family: 'Nanum Gothic', sans-serif;;
-        color: $colorHr;}}
+        color: $colorBlanco;}}
   
 .header{
     &__img{
@@ -60,7 +59,7 @@ hr{
 .nav{
     background-color: $azulOscuroFondo;
     &__link{
-        color: $colorHr;
+        color: $colorBlanco;
         font-size: 25px;}}
 /* termina clases en todas las paginas */ 
 
@@ -92,27 +91,22 @@ hr{
         justify-items: center;
         margin: auto;}
     &__item{
-        background-color: $colorCremaFondoTexto;
         padding-top: 30px;
         padding-bottom: 30px;}
     &__h1{
-        background-color: $rosaFondo;
         font-size: 40px;
         text-align: center;
-        color: $colorVerdeUsual;
+        color: $textoIndex;
         animation: bounce; 
         animation-duration: 2s;}
-    &__img{
+    &__img{ 
         min-width: 309px;
         max-width: $widthimg;
         height: $heightimg;}
     &__col-pFondo{
-        margin: $marginsypaddings;
-        color: $textoIndex;
-        background-blend-mode: overlay;
-        opacity: 70%;}
+        margin: $marginsypaddings;}
     &__p {
-        background-color: $colorHr;
+        background-color: $colorBlanco;
         color: $textoIndex;
         font-size: 18px;
         padding: $marginsypaddings;}}
@@ -131,7 +125,6 @@ hr{
         max-width: 200px;
         margin: auto;}
     &__item{
-        background-color: $colorCremaFondoTexto;
         padding: $marginsypaddings;
         margin-top: $marginsypaddings;
         margin-bottom: $marginsypaddings;
@@ -140,8 +133,7 @@ hr{
         animation-duration: 2s;}
     &__h2{
         text-align: center;
-        color: $colorCremaFondoTexto;
-        background-color: $colorVerdeUsual;}
+        color: $textoIndex;}
         @keyframes appear {
         0% {opacity: 0;}
         100% { opacity: 1;}}
@@ -193,8 +185,7 @@ hr{
         padding: 0px;}
     &__h1{
         text-align: center;
-        color: $colorCremaFondoTexto;
-        background-color: $colorVerdeUsual;
+        color: $textoIndex;
         margin-top: 20px;
         margin-bottom: 20px;}
     &__img{
@@ -207,13 +198,12 @@ hr{
     &__img:hover{
         transform: skewY(5deg);}
     &__item{
-        background-color: $colorCremaFondoTexto;
         padding: 5px;
         margin-top: $marginsypaddings;
         margin-bottom: $marginsypaddings;
         text-align: center;}
     &__titulo{
-        color: $colorVerdeUsual;
+        color: $textoIndex;
         font-size: $marginyfontsize;
         font-weight: bold;
         text-align: center;}}
