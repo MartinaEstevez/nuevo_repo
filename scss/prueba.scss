@@ -54,7 +54,8 @@ p{
        height: $tamañocompleto;
        width: $tamañocompleto;}}
 .nav{
-    background-color: $azulOscuroFondo;
+    margin-bottom: 15px;
+    background-color: $fondoNav;
     &__link{
         color: $colorBlanco;
         font-size: 25px;}}
@@ -89,13 +90,15 @@ p{
         margin: auto;}
     &__item{
         padding-top: 30px;
-        padding-bottom: 30px;}
+        padding-bottom: 30px;
+        background-color: $fondoRow;}
     &__h1{
         font-size: 40px;
         text-align: center;
         color: $textoIndex;
         animation: bounce; 
-        animation-duration: 2s;}
+        animation-duration: 2s;
+        background-color: $fondoTitulo;}
     &__img{ 
         min-width: 309px;
         max-width: $widthimg;
@@ -129,6 +132,7 @@ p{
         animation-name: appear; 
         animation-duration: 2s;}
     &__h2{
+        margin-top: 15px;
         text-align: center;
         color: $textoIndex;}
         @keyframes appear {
@@ -184,7 +188,8 @@ p{
         text-align: center;
         color: $textoIndex;
         margin-top: 20px;
-        margin-bottom: 20px;}
+        margin-bottom: 20px;
+        background-color: $fondoTitulo;}
     &__img{
         min-width: 90px;
         max-width: 290px;
@@ -209,8 +214,18 @@ p{
 
 /* comienza clases en reseñas */ 
 .containerR{
+    &__row{
+        margin-top: 15px;
+        background-color: lightblue;
+    }
+
+   
     &__h1{
-        @extend .containerL__h1;}}
+        text-align: center;
+        color: $textoIndex;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background-color: $fondoRow;}}
 /* termina clases en "Reseñas" */
 
 

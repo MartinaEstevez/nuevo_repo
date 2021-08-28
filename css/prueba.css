@@ -54,7 +54,8 @@ p {
   width: 100%; }
 
 .nav {
-  background-color: #033247; }
+  margin-bottom: 15px;
+  background-color: burlywood; }
   .nav__link {
     color: white;
     font-size: 25px; }
@@ -87,13 +88,15 @@ p {
     margin: auto; }
   .containerI__item {
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    background-color: cadetblue; }
   .containerI__h1 {
     font-size: 40px;
     text-align: center;
     color: #1c252e;
     animation: bounce;
-    animation-duration: 2s; }
+    animation-duration: 2s;
+    background-color: lightblue; }
   .containerI__img {
     min-width: 309px;
     max-width: 500px;
@@ -122,6 +125,7 @@ p {
     animation-name: appear;
     animation-duration: 2s; }
   .containerB__h2 {
+    margin-top: 15px;
     text-align: center;
     color: #1c252e; }
 
@@ -177,11 +181,12 @@ p {
   .containerL__col-3 {
     max-width: 25%;
     padding: 0px; }
-  .containerL__h1, .containerB__h1, .containerR__h1 {
+  .containerL__h1, .containerB__h1 {
     text-align: center;
     color: #1c252e;
     margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    background-color: lightblue; }
   .containerL__img {
     min-width: 90px;
     max-width: 290px;
@@ -204,6 +209,17 @@ p {
 
 /* termina clases en "Libros" */
 /* comienza clases en reseñas */
+.containerR__row {
+  margin-top: 15px;
+  background-color: lightblue; }
+
+.containerR__h1 {
+  text-align: center;
+  color: #1c252e;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: cadetblue; }
+
 /* termina clases en "Reseñas" */
 /* comienza clases en "Contacto" */
 .containerC {
