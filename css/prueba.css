@@ -4,15 +4,15 @@
 /* comienza clases de fondos y font-family */
 .colorDeFondo {
   background-color: white;
-  font-family: 'Nanum Gothic', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 .colorDeFondoD {
   background-color: white;
-  font-family: 'Nanum Gothic', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 .colorDeFondoC {
   background-color: white;
-  font-family: 'Nanum Gothic', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 /* termina clases de fondos y font-family */
 /* comienza css de p y hr */
@@ -20,10 +20,6 @@ p {
   color: #1c252e;
   text-align: justify;
   text-indent: 25px; }
-
-hr {
-  color: white;
-  margin: 10px; }
 
 /* termina css de p y hr */
 /* comienza clases en todas las paginas */
@@ -48,7 +44,7 @@ hr {
     margin-bottom: 0px;
     text-decoration: none;
     font-size: 15px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: white; }
 
 .header__img {

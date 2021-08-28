@@ -1,6 +1,7 @@
 @import "colores";
-@import "tamaños";
+@import "tamanios";
 @import "mixins";
+@import "fontFamily";
 
 /* comienza clases de fondos y font-family */
 .colorDeFondo{
@@ -16,10 +17,7 @@
 p{
     color: $textoIndex;
     text-align: justify;
-    text-indent: 25px;}
-hr{
-    color: $colorBlanco;
-    margin: $marginsypaddings;}    
+    text-indent: 25px;}   
 /* termina css de p y hr */ 
 
 
@@ -44,10 +42,9 @@ hr{
         border-right: 1px solid $colorBlanco;}
     &__a{
         margin-bottom: 0px;
-        ;
         text-decoration: none;
         font-size: 15px;
-        font-family: 'Nanum Gothic', sans-serif;;
+        font-family: $tipografiaGeneral;
         color: $colorBlanco;}}
   
 .header{
