@@ -17,11 +17,13 @@
 
 </head>
 <body class="colorDeFondo">
-
+  <!--comienza header-->
   <header class="header">
     <img src="img/imgheader.jpg" alt="Estante de libros" width="1519px" height="150px" class="header__img">
   </header>
+  <!--termina header-->
     
+  <!--comienza nav-->
   <nav>
     <ul class="nav justify-content-end">
       <li class="nav__item nav-item">
@@ -41,44 +43,46 @@
       </li>      
     </ul> 
   </nav>
+  <!--termina nav-->
 
+  <!--comienza container-->
   <div class="containerC container"> 
-    <div class="containerC__row row">
+    <div class="containerC__row row"> <!--comeinza titulo-->
       <h1 class="containerC__h1">Contacto</h1>
-    </div>
-    <div class="containerC__row row"> 
+    </div> <!--termina titulo-->
+    <div class="containerC__row row"> <!--comienza el formulario-->
       <form class="containerC__form"> 
-        <div class="containerC__item-gris mb-3">  
+        <div class="containerC__item-gris mb-3"> <!--comienza ingrese su nombre-->
         <input class="form-control" type="text" placeholder="Ingrerse su nombre" aria-label="default input example">
-        </div>
-        <div class="containerC__item mb-3">  
+        </div> <!--temrina ingrese su nombre-->
+        <div class="containerC__item mb-3"> <!--comienza ingrese su email--> 
           <label for="exampleInputEmail1" class="form-label">Ingrese su email</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         <div id="emailHelp" class="containerC__item form-text">No compartiremos tu email con nadie.</div>   
-        </div>
-        <select class="containerC__item form-select" aria-label="Default select example">  
+        </div> <!--termina ingrese su email-->
+        <select class="containerC__item form-select" aria-label="Default select example"> <!--comienza selector de genero-->
           <option selected>Genero</option>
           <option value="1">Femenino</option>
           <option value="2">Masculino</option>
           <option value="3">Otro</option>  
-        </select>
+        </select> <!--termina selector de genero-->
         <br>
         </br>
-        <div class="containerC__item-gris form-floating"> 
+        <div class="containerC__item-gris form-floating"> <!--comienza espacio para que el usuario deje su comentario-->
           <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
           <label for="floatingTextarea2">Deja un comentario</label>
-        </div>
+        </div> <!--termina el espacio para comentar-->
         <br>
         </br>
-        <div class="containerC__item mb-3 form-check"> 
+        <div class="containerC__item mb-3 form-check"> <!--comienza selector de recibir emails-->
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Deseo recibir emails de esta pagina</label>
-        </div>  
-        <button type="submit" class="containerC__item btn btn-primary">Enviar</button> 
+        </div>  <!--termina selector-->
+        <button type="submit" class="containerC__item btn btn-primary">Enviar</button> <!--comienza boton de enviar y de reiniciar-->
         <button type="button" class="containerC__item btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">  
           Reiniciar
-        </button>
-        <div class="containerC__item-gris modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        </button> <!--terminan botones de enviar y reiniciar-->
+        <div class="containerC__item-gris modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--comienza modal-->
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -87,31 +91,33 @@
               </div>
               <div class="modal-footer">
                 <input class="btn btn-secondary" type="reset" value="Reiniciar" data-bs-dismiss="modal">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No estoy seguro</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No estoy seguro</button> 
               </div>
             </div>
-          </div>
+          </div> <!--termina modal-->
         </div>
       </form>
-    </div>
+    </div> <!--terima el formulario-->
     <br>
     </br>
-</div>
-  
-   
-<div class="containerI2 container">
-  <div class="containerI2__row row">
-   <div class="containerI2__col-m col">
-     <a class="containerI2__a" href="https://www.biografiasyvidas.com/biografia/d/dickens.htm">Conoce mas acerca de Charles Dickens</a>
-   </div>
-   <div class="containerI2__col-m col">
-     <a class="containerI2__a" href="https://www.barnesandnoble.com/s/charles+dickens/_/N-8q8">Compra los libros de Charles Dickens</a>
-   </div>
-   <div class="containerI2__col col">
-     <a class="containerI2__a" href="Contacto.html">Dejenos su comentario acerca del sitio</a>
-   </div>
   </div>
-</div>
+  <!--termina container-->
+  
+  <!--comeinza footer-->
+  <div class="containerI2 container">
+    <div class="containerI2__row row">
+    <div class="containerI2__col-m col">
+      <a class="containerI2__a" href="https://www.biografiasyvidas.com/biografia/d/dickens.htm">Conoce mas acerca de Charles Dickens</a>
+    </div>
+    <div class="containerI2__col-m col">
+      <a class="containerI2__a" href="https://www.barnesandnoble.com/s/charles+dickens/_/N-8q8">Compra los libros de Charles Dickens</a>
+    </div>
+    <div class="containerI2__col col">
+      <a class="containerI2__a" href="Contacto.html">Dejenos su comentario acerca del sitio</a>
+    </div>
+    </div>
+  </div>
+  <!--termina footer-->
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
