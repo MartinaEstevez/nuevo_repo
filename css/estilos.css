@@ -106,6 +106,8 @@ p {
     color: #1c252e;
     font-size: 18px;
     padding: 10px; }
+  .containerI__buton {
+    margin-top: 15px; }
 
 /* termina clases en "Index" */
 /* comienza clases en "Biografia" */
@@ -237,3 +239,18 @@ p {
     text-align: center; }
 
 /* termina clases en "Contacto" */
+/* comienza clases de "404" */
+.container4 {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  margin: auto; }
+  .container4__row {
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    margin-top: 20%; }
+  .container4__h1 {
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    color: dimgrey; }

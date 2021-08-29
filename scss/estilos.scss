@@ -102,12 +102,13 @@ p{
         min-width: 309px;
         max-width: 100%;
         height: 90%;}
-  
-    &__p {
+      &__p {
         background-color: $colorBlanco;
         color: $textoIndex;
         font-size: 18px;
-        padding: $marginsypaddings;}}
+        padding: $marginsypaddings;}
+    &__buton{
+        margin-top: 15px;}}
 /* termina clases en "Index" */
 
 
@@ -243,6 +244,27 @@ p{
         animation-duration: 2s;
         text-align: center;}}
 /* termina clases en "Contacto" */
+
+/* comienza clases de "404" */
+.container4{
+    background-color: $colorBlanco;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+   
+
+    &__row{
+        align-items: center;
+        justify-items: center;
+        margin: auto; 
+        margin-top: 20%;
+    }
+    &__h1{
+       font-size: 50px; 
+       font-family: $tipografiaGeneral;
+       color: $modalTexto;
+    }
+}
 
 
 
