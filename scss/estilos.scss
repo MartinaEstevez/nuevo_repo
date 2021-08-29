@@ -1,112 +1,88 @@
 @import "colores";
 @import "tamanios";
-@import "mixins";
 @import "fontFamily";
-
-/* comienza clases de fondos y font-family */
-.colorDeFondo{
-    @include colorFondo ($colorBlanco)}
-.colorDeFondoD{
-    @include colorFondo ($colorBlanco)}
-.colorDeFondoC{
-    @include colorFondo ($colorBlanco)}
-/* termina clases de fondos y font-family */
-
-
-/* comienza css de p y hr */
-p{
-    color: $textoIndex;
-    text-align: justify;
-    text-indent: 25px;}   
-/* termina css de p y hr */ 
 
 
 /* comienza clases en todas las paginas */ 
-.containerI2{
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
+.colorDeFondo{ /* clase del body */
+    font-family: $tipografiaGeneral;}
+.containerI2{ /* footer */
     max-width: 1528px;
     margin-top: 10%;
     background-color: $azulOscuroFondo;
     &__row{
         text-align: center;
-        list-style-type: none;
-        width: 100%;
-        ;}
+        width: $tamañoCompleto;}
     &__col{
-        padding: 20px;}
+        padding: $margins-Paddings2;}
     &__col-m{
-        padding: 20px;
-        padding-right:20px; 
+        padding: $margins-Paddings2;
         border-right: 1px solid $colorBlanco;}
     &__a{
-        margin-bottom: 0px;
+        margin-bottom: $nomargin-Padding;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 1rem;
         font-family: $tipografiaGeneral;
         color: $colorBlanco;}}
-  
-.header{
-    &__img{
-       padding: 0px;
-       margin: 0px;
-       height: $tamañocompleto;
-       width: $tamañocompleto;}}
-.nav{
+.header__img{ /* header */
+       padding: $nomargin-Padding;
+       margin: $nomargin-Padding;
+       height: $tamañoCompleto;
+       width: $tamañoCompleto;}
+.nav{       /* nav */
     margin-bottom: 15px;
     background-color: $fondoNav;
     &__link{
         color: $colorBlanco;
-        font-size: 25px;}}
+        font-size: 1.5rem;}}
+p{        /* clase para cada parrafo */
+    color: $textoIndex;
+    text-align: justify;
+    text-indent: 25px;} 
 /* termina clases en todas las paginas */ 
 
 
 /* comienza media queries de Index */
 @media only screen and (max-width: 768px){
     .containerI{
-        &__p{
-        font-size: 15px;}
-        &__col{
+         &__col{
         margin: 2px;
-        padding: 0px;}}}
+        padding: $nomargin-Padding;}
+        &__p{
+        font-size: 1rem;}}}
 @media only screen and (max-width: 634px){
     .containerI{
         &__row{
         display: block;}
-        &__img{
-        margin: auto;}
         &__p{
-        font-size: 10px;}}}
+        font-size: 0.625rem;}}}
 /* Termina media queries de Index */
 /* comienza clases en "Index" */
-.containerI{
+.containerI{ /* contenedor de Index */
     max-width: 1320px;
     margin: auto;
     &__row{
         align-items: center;
-        justify-items: center;
         margin: auto;}
     &__item{
         padding-top: 30px;
         padding-bottom: 30px;
         background-color: $fondoRow;}
+    &__img{ 
+        min-width: 309px;
+        max-width: $tamañoCompleto;
+        height: 90%;}
     &__h1{
-        font-size: 40px;
+        font-size: 2.5rem;
         text-align: center;
         color: $textoIndex;
         animation: bounce; 
         animation-duration: 2s;
         background-color: $fondoTitulo;}
-    &__img{ 
-        min-width: 309px;
-        max-width: 100%;
-        height: 90%;}
       &__p {
-        background-color: $colorBlanco;
         color: $textoIndex;
-        font-size: 18px;
-        padding: $marginsypaddings;}
+        font-size: 1.125rem;
+        padding: $margins-Paddings;}
     &__buton{
         margin-top: 15px;}}
 /* termina clases en "Index" */
@@ -118,60 +94,65 @@ p{
     margin: auto;
     &__row{
         @extend .containerI__row;}
-    &__h1{
-        @extend .containerL__h1}
-    &__boton{
-        max-width: 200px;
-        margin: auto;}
     &__item{
-        padding: $marginsypaddings;
-        margin-top: $marginsypaddings;
-        margin-bottom: $marginsypaddings;
+        padding: $margins-Paddings;
+        margin-top: $margins-Paddings;
+        margin-bottom: $margins-Paddings;
         text-align: center; 
         animation-name: appear; 
         animation-duration: 2s;}
-    &__h2{
+    &__img{
+        max-width: $widthImg;
+        height: $heightImg;}
+    &__row-carousel{
+        @extend .containerB__img;
+        margin: auto;}
+    &__h1{
+        text-align: center;
+        color: $textoIndex;
+        margin-top: $margins-Paddings2;
+        margin-bottom: $margins-Paddings2;
+        background-color: $fondoTitulo;}
+     &__h2{
         margin-top: 15px;
         text-align: center;
         color: $textoIndex;}
         @keyframes appear {
         0% {opacity: 0;}
         100% { opacity: 1;}}
-    &__img{
-        max-width: $widthimg;
-        height: $heightimg;}
-    &__row-carousel{
-        @extend .containerB__img;
+    &__boton{
+        max-width: 200px;
         margin: auto;}}
+   
 /* termina clases en "Biografia" */ 
 
 /* comienza media queries de "Libros"*/
 @media only screen and (max-width: 765px){
     .containerL__img{
         min-width: 100px;
-        max-width: 100%;
+        max-width: $tamañoCompleto;
         max-height: 150px;
-        padding: 0px;}}
+        padding: $nomargin-Padding;}}
 @media only screen and (max-width:992px){
     .containerL{
         max-width: 98%;}}
 @media only screen and (max-width:800px){
     .containerL__img{
         min-width: 100px;
-        max-width: 100%;
+        max-width: $tamañoCompleto;
         max-height: 240px;
-        padding: 0px;}}
+        padding: $nomargin-Padding;}}
 @media only screen and (max-width:660px){
     .containerL__row{
         display: block;
-        margin-bottom: 20px;}
+        margin-bottom: $margins-Paddings2;}
     .containerL__col-3{
         margin:auto;
         min-width: 230px;
         height: 240px;}
     .containerL__col-9{
         width: 98%;
-        font-size: 13px;}
+        font-size: 0.75rem;}
     .containerL__img{
         min-width: 230px;
         height: 240px;}}
@@ -183,45 +164,39 @@ p{
         @extend .containerI__row;}
     &__col-3{
         max-width: 25%;
-        padding: 0px;}
-    &__h1{
-        text-align: center;
-        color: $textoIndex;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: $fondoTitulo;}
+        padding: $nomargin-Padding;}
+    &__item{
+        padding: 5px;
+        margin-top: $margins-Paddings;
+        margin-bottom: $margins-Paddings;
+        text-align: center;}
     &__img{
         min-width: 90px;
         max-width: 290px;
         max-height: 320px;
-        margin-top: $marginsypaddings;
-        margin-bottom: $marginsypaddings;
-        padding: 0px;}
+        margin-top: $margins-Paddings;
+        margin-bottom: $margins-Paddings;
+        padding: $nomargin-Padding;}
     &__img:hover{
         transform: skewY(5deg);}
-    &__item{
-        padding: 5px;
-        margin-top: $marginsypaddings;
-        margin-bottom: $marginsypaddings;
-        text-align: center;}
     &__titulo{
         color: $fondoRow;
-        font-size: $marginyfontsize;
+        font-size: 1.25rem;
         font-weight: bold;
-        text-align: center;}}
+        text-align: center;}
+    &__h1{
+        @extend .containerB__h1;}} 
 /* termina clases en "Libros" */
 
-
-/* comienza clases en reseñas */ 
+/* comienza clases en "Resenias" */ 
 .containerR{
     &__row{
         margin-top: 15px;
-        background-color: lightblue;}
-
+        background-color: $fondoTitulo;}
     &__h1{
         text-align: center;
         color: $textoIndex;
-        margin-top: 20px;
+        margin-top: $margins-Paddings2;
         margin-bottom: 30px;
         background-color: $fondoRow;}}
 /* termina clases en "Reseñas" */
@@ -233,12 +208,12 @@ p{
     color: $modalTexto;
     &__h1{
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: $margins-Paddings2;
+        margin-bottom: $margins-Paddings2;
     }
     &__form{
-       font-size: 15px;
-        margin-top: $marginyfontsize;
+       font-size: 1rem;
+        margin-top: $margins-Paddings2;
         margin-bottom: 100px;            
         animation: bounceInUp;
         animation-duration: 2s;
@@ -248,23 +223,19 @@ p{
 /* comienza clases de "404" */
 .container4{
     background-color: $colorBlanco;
-    height: 100%;
-    width: 100%;
+    height: $tamañoCompleto;
+    width: $tamañoCompleto;
     margin: auto;
-   
-
     &__row{
         align-items: center;
         justify-items: center;
         margin: auto; 
-        margin-top: 20%;
-    }
+        margin-top: 20%;}
     &__h1{
-       font-size: 50px; 
+       font-size: 2.5rem; 
        font-family: $tipografiaGeneral;
-       color: $modalTexto;
-    }
-}
+       color: $modalTexto;}}
+/* termina clases de "404" */
 
 
 
