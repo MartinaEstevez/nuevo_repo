@@ -65,7 +65,6 @@ p {
 /* Termina media queries de Index */
 /* comienza clases en "Index" */
 .containerI {
-  /* contenedor de Index */
   max-width: 1320px;
   margin: auto; }
   .containerI__row, .containerB__row, .containerL__row {
@@ -193,7 +192,7 @@ p {
     text-align: center; }
 
 /* termina clases en "Libros" */
-/* comienza clases en "Resenias" */
+/* comienza clases en "Reseñas" */
 .containerR__row {
   margin-top: 15px;
   background-color: lightblue; }

@@ -58,7 +58,7 @@ p{        /* clase para cada parrafo */
         font-size: 0.625rem;}}}
 /* Termina media queries de Index */
 /* comienza clases en "Index" */
-.containerI{ /* contenedor de Index */
+.containerI{ 
     max-width: 1320px;
     margin: auto;
     &__row{
@@ -188,7 +188,7 @@ p{        /* clase para cada parrafo */
         @extend .containerB__h1;}} 
 /* termina clases en "Libros" */
 
-/* comienza clases en "Resenias" */ 
+/* comienza clases en "Reseñas" */ 
 .containerR{
     &__row{
         margin-top: 15px;
