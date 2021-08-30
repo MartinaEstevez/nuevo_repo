@@ -193,16 +193,17 @@ p {
 
 /* termina clases en "Libros" */
 /* comienza clases en "Reseñas" */
-.containerR__row {
-  margin-top: 15px;
-  background-color: lightblue; }
-
-.containerR__h1 {
-  text-align: center;
-  color: #1c252e;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  background-color: cadetblue; }
+.containerR {
+  width: 97%; }
+  .containerR__row {
+    margin-top: 15px;
+    background-color: lightblue; }
+  .containerR__h1 {
+    text-align: center;
+    color: #1c252e;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: cadetblue; }
 
 /* termina clases en "Reseñas" */
 /* comienza clases en "Contacto" */
