@@ -188,8 +188,9 @@ p{        /* clase para cada parrafo */
         @extend .containerB__h1;}} 
 /* termina clases en "Libros" */
 
-/* comienza clases en "Reseñas" */ 
+/* comienza clases en "Reseñas" */
 .containerR{
+    width: 97%;
     &__row{
         margin-top: 15px;
         background-color: $fondoTitulo;}
